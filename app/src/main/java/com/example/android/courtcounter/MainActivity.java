@@ -14,8 +14,8 @@ public class MainActivity extends ActionBarActivity {
 
     int teamAScorecurrent =0;
     int teamAScorePrevious = 0;
-    int teamBScore = 0;
-
+    int teamBScorecurrent =0;
+    int teamBScorePrevious = 0;
 
 
 
@@ -26,7 +26,7 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         displayScoreA(teamAScorecurrent);
-        displayScoreB(teamBScore);
+        displayScoreB(teamBScorecurrent);
 
 
     }
@@ -93,7 +93,28 @@ public class MainActivity extends ActionBarActivity {
                 teamAScorePrevious = teamAScorecurrent - 1;
                 displayScoreA(teamAScorecurrent);
                 break;
-            
+
+            case R.id.teamB2points:
+// handle button A click;
+                teamBScorecurrent = teamBScorecurrent +2;
+                teamBScorePrevious = teamBScorecurrent - 2;
+                displayScoreB(teamBScorecurrent);
+                break;
+
+            case R.id.teamB3points:
+// handle button B click;
+                teamBScorecurrent = teamBScorecurrent +3;
+                teamBScorePrevious = teamBScorecurrent - 3;
+                displayScoreB(teamBScorecurrent);
+                break;
+
+            case R.id.teamB1point:
+// handle button B click;
+                teamBScorecurrent = teamBScorecurrent +1;
+                teamBScorePrevious = teamBScorecurrent - 1;
+                displayScoreB(teamBScorecurrent);
+                break;
+
 
 
             default:
@@ -102,26 +123,12 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
-    public void add2ForTeamB(View view){
-        teamBScore = teamBScore +2;
-        displayScoreB(teamBScore);
-    }
-
-    public void add3ForTeamB(View view){
-        teamBScore = teamBScore +3;
-        displayScoreB(teamBScore);
-    }
-
-    public void add1ForTeamB(View view){
-        teamBScore = teamBScore +1;
-        displayScoreB(teamBScore);
-    }
 
     public void reset(View view){
         teamAScorecurrent = 0;
-        teamBScore = 0;
+        teamBScorecurrent = 0;
         displayScoreA(teamAScorecurrent);
-        displayScoreB(teamBScore);
+        displayScoreB(teamBScorecurrent);
     }
 
     public void undo(View view){

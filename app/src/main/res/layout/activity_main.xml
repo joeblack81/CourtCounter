@@ -85,7 +85,7 @@
         android:layout_above="@+id/teamB3points"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:onClick="add2ForTeamB"
+        android:onClick="onClick"
         />
 
     <Button
@@ -96,7 +96,7 @@
         android:layout_above="@+id/teamB1point"
         android:layout_toLeftOf="@+id/teamBScore"
         android:layout_toStartOf="@+id/teamBScore"
-        android:onClick="add3ForTeamB"
+        android:onClick="onClick"
         />
 
     <Button
@@ -107,7 +107,7 @@
         android:layout_below="@+id/teamA3points"
         android:layout_alignRight="@+id/teamB3points"
         android:layout_alignEnd="@+id/teamB3points"
-        android:onClick="add1ForTeamB"
+        android:onClick="onClick"
         />
 
     <Button
